@@ -1,0 +1,1 @@
+select passenger_name,passenger_gender,passenger_birthday,ticket_price from passengers

@@ -1,0 +1,1 @@
+insert into places (places_name) values ('??');

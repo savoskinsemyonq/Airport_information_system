@@ -1,0 +1,1 @@
+INSERT INTO airplanes (airplane_start_work_data, airplane_seats_number,airplane_model_id_FK) VALUES ('??','??','??')

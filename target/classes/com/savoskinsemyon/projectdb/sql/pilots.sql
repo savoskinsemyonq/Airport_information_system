@@ -1,0 +1,8 @@
+select staff_name
+from staff
+join departments_and_staff on staff.staff_id=departments_and_staff.staff_id_FK
+join departments on departments.department_id=departments_and_staff.department_id_FK
+left join medical_examination_and_staff on staff.staff_id=medical_examination_and_staff.staff_id_FK
+left join medical_examination on medical_examination.medical_examination_id=medical_examination_and_staff.medical_examination_id_FK
+where department_name='Отдел пилотов' and medical_examination_id is not null
+group by staff_id;
